@@ -1,0 +1,113 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.nav-items > ul{
+    list-style: none;
+    display: flex;
+    gap:20px
+}
+
+.nav-items> ul>a{
+    text-decoration: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.card{
+    border: 1px solid black;
+    width: 16%;
+    padding: 10px;
+    margin: 1%;
+    height: 500px;
+}
+
+.card > img{
+    width: 100%;
+    height: 60%;
+}
+
+.restaurant-list{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.restaurant-list>a{
+    text-decoration: none;
+}
+.shimmer{
+  background-color: #ccc;
+  border: #ccc;
+  border-radius: 3px;
+}
+
+.restraunt-details{
+    display: flex;
+    padding-left: 25%;
+    padding-right: 25%;
+    flex-direction: column;
+    align-items: center;
+    gap:10px
+}
+
+.restaurant-menu{
+    border-top: 1px solid black;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restraunt-details > img{
+    width: 20%;
+}
+
+.menu-card{
+    border-bottom: 1px solid black;
+    width:45% ;
+    height: 210px;
+    margin: 1%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.details>p{
+    width: 450px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: auto;
+}
+.image> img{
+    height: 100%;
+    width: 100%;
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
