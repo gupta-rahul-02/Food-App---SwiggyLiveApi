@@ -2,7 +2,7 @@
   "name": "l4_talk_is_cheap_show_me_code",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
