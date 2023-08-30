@@ -1,4 +1,5 @@
 import { imageCDN } from "../constants/constants";
+// import {useSelector} from "react-redux"
 const FoodCard = ({
   name,
   price,
@@ -7,6 +8,8 @@ const FoodCard = ({
   description,
   defaultPrice,
 }) => {
+  //const cartItmes = useSelector((store) => store.cart.items)
+  //console.log(cartItmes)
   return (
     <>
       <div className="border border-solid border-orange-300 w-[18%] p-3 m-[1%] h-72 shadow hover:bg-orange-50">

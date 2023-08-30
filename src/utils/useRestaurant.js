@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react"
-import { bangloreRestaurantsCDN } from "../constants/constants";
+import { bangloreRestaurantsCDN , proxyCDN} from "../constants/constants";
 const useRestaurant = () =>{
     const [allRestaurant, setAllRestaurant] = useState([]);
     const [filteredRestaurant, setFilteredRestaurant] = useState([])
@@ -9,7 +9,7 @@ const useRestaurant = () =>{
       },[])
     
       async function getRestaurants() {
-        const data = await fetch(bangloreRestaurantsCDN)
+        const data = await fetch(proxyCDN+bangloreRestaurantsCDN)
         const json = await data.json();
         setAllRestaurant(json?.data?.cards[2]?.card?.card?.gridElements.infoWithStyle.restaurants)
         setFilteredRestaurant(json?.data?.cards[2]?.card?.card?.gridElements.infoWithStyle.restaurants)
