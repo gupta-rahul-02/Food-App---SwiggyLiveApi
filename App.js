@@ -57,17 +57,14 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
-        // errorElement:<Error/>,
-        // children:[
-        //   {
-        //   path:"order", //path :- localhost:1234/cart/order
-        //   element:<Order/>
-        //   }
-        // ]
       },
       {
         path:"/order",
         element:<Order/>
+      },
+      {
+        path:"/login",
+        element:<Signup/>
       },
       {
         path: "/restaurant/:resId",
