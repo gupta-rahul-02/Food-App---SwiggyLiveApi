@@ -14,7 +14,8 @@ const Title = () => {
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
-  const cartItem = useSelector(store => store.cart.items)
+  //const cartItem = useSelector(store => store.cart.items)
+  const totalCartItem = useSelector(store => store.cart.totalQuantity)
   return (
     <div className="flex justify-between border-solid border-2 border-orange-400 fixed w-[100%] overflow-hidden top-0 bg-orange-100">
       <Title />
@@ -30,7 +31,7 @@ const Header = () => {
             <li>Contact</li>
           </Link>
           <Link to="/cart" className="p-3 hover:text-orange-500">
-            <li>Cart {cartItem.length}</li>
+            <li>Cart {totalCartItem}</li>
           </Link>
           <Link to="/instamart" className="p-3 hover:text-orange-500">
             <li>Instamart</li>

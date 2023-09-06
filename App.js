@@ -15,6 +15,7 @@ import Shimmer from "./src/component/Shimmer";
 import { Provider } from "react-redux";
 import store from "./src/utils/store";
 import Order from "./src/component/Order";
+import Location from "./src/component/Location";
 
 //import Instamart from "./src/component/Instamart";
 const Instamart = lazy(() => import("./src/component/Instamart"));
@@ -23,6 +24,7 @@ const AppLayout = () => {
     <Provider store={store}>
       <Header />
       {/* <Signup></Signup> */}
+      
       <Outlet />
       <Footer />
     </Provider>
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Body />,
       },
+      // {
+      //   path:"/body",
+      //   element:<Body/>
+      // },
       {
         path: "/about",
         element: <About />,

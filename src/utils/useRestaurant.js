@@ -1,9 +1,11 @@
 import {useState, useEffect} from "react"
 import { bangloreRestaurantsCDN , proxyCDN} from "../constants/constants";
+//import useLocationCoord from "./useLocationCoords";
 const useRestaurant = () =>{
     const [allRestaurant, setAllRestaurant] = useState([]);
     const [filteredRestaurant, setFilteredRestaurant] = useState([])
-    
+    // const coords = useLocationCoord()
+    // console.log(coords.coords)
     useEffect(() =>{
         getRestaurants()
       },[])

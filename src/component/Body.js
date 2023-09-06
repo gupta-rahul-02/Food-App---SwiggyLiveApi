@@ -8,6 +8,7 @@ import useOnline from "../utils/useOnline";
 export const Body = () => {
   const [searchText, setSearchText] = useState("");
   const { allRestaurant,setFilteredRestaurant, filteredRestaurant } = useRestaurant();
+ 
   const isOnline = useOnline()
 
   if (!isOnline){

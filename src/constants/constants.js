@@ -101,4 +101,9 @@ export const imageCDN = "https://media-assets.swiggy.com/swiggy/image/upload/fl_
 export const restaurantMenuCDN = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.3071588&lng=73.1812187&restaurantId="
 //export const vadodaraRestaurantsCDN = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.3071588&lng=73.1812187&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 export const bangloreRestaurantsCDN = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
+export const restaurantsCDN = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING"
 export const  proxyCDN = "https://corsproxy.io/?"
+
+export const coordsApi = "https://api.openweathermap.org/data/2.5/weather?q=London&appid=8a35b4c73b3b72e10b6ad66a8ec3aacd"
+
+
