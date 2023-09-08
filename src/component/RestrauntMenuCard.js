@@ -25,18 +25,30 @@ const RestrauntMenuCard = ({
   const handleAddItem = (item) => {
     dispatch(addItem(item));
   };
-  
+
   return (
     <div className="border-b border-orange-200 w-[45%] m-[1%] h-52 p-5 flex flex-row overflow-auto  hover:bg-orange-50">
       <div className="flex flex-col gap-3">
-        <p className="w-[450px] ">{itemAttribute.vegClassifier}</p>
-        <h3 className="text-lg font-semibold">{name}</h3>
+        {itemAttribute.vegClassifier === "VEG" ? (
+          <img
+            className="w-10 h-6"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Veg_symbol.svg"
+          ></img>
+        ) : (
+          <img
+            className="w-10 h-6"
+            src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Non_veg_symbol.svg"
+          ></img>
+        )}
+        <h3 className="text-lg font-semibold">{name.length > 50 ? name.slice(0,49)+"..." : name }</h3>
         <p className="w-[450px font-light">
           {Math.ceil(item.price / 100)}
           /- Rs.
         </p>
         <p className="w-[450px] font-light">
-          {description.length > 180
+          {typeof description === "undefined"
+            ? null
+            : description.length > 180
             ? description.slice(0, 179) + "..."
             : description}
         </p>

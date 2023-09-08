@@ -14,14 +14,18 @@ componentDidMount(){
   render(){
     console.log("Parent render")
     return (
-      <div className="mt-36">
-        <h1>About Page</h1>
-        <p>Building Food App called Foodie Adda</p>
+      <>
+      <div className="mt-36 mb-8 ">
+        <h1 className="font-bold text-2xl pl-[45%] pr-[30%] mb-4">About Page</h1>
+        <p className="pl-[40%]">Building Food App called Foodie Adda</p>
         {/* <Outlet/>   */}
           {/* for nested routing */}
-        <Profile   child={"child1"} />
+       
         {/* <Profile child ={"child2"}/> */}
       </div>
+       <Profile   child={"child1"} />
+      </>
+      
     );
   }
 }
